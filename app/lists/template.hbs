@@ -1,0 +1,15 @@
+<!-- <h2> All My Lists</h2>
+<h3>Dog Types</h3>
+<h3>Cat Types</h3>
+<h3>Fish Types</h3> -->
+
+<h2>All Lists</h2>
+<h4>
+  {{#each model as |list|}}
+    List {{list.id}} is full of {{list.name}}
+  {{/each}}
+</h4>
+
+{{#link-to "application"}} Home {{/link-to}}
+
+{{outlet}}
